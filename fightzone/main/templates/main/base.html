@@ -1,0 +1,525 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="FightZoneDME">
+    <meta name="keywords" content="Бокс единоборства в Домодедово">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FIGHT ZONE</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href='{% static "css/bootstrap.min.css" type="text/css" %}'>
+    <link rel="stylesheet" href='{% static "css/font-awesome.min.css" type="text/css" %}'>
+    <link rel="stylesheet" href='{% static "css/elegant-icons.css" type="text/css" %}'>
+    <link rel="stylesheet" href='{% static "css/nice-select.css" type="text/css" %}'>
+    <link rel="stylesheet" href='{% static "css/owl.carousel.min.css" type="text/css" %}'>
+    <link rel="stylesheet" href='{% static "css/magnific-popup.css" type="text/css" %}'>
+    <link rel="stylesheet" href='{% static "css/slicknav.min.css" type="text/css" %}'>
+    <link rel="stylesheet" href='{% static "css/style.css" type="text/css" %}'>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="/">
+                    <img src='{% static "img/logo.png" alt="" %}'>
+                </a>
+            </div>
+            <div class="top-social">
+                <a href="https://wa.me/79261397222" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://t.me/FightZoneDME_bot" target="_blank"><i class="fa fa-telegram"></i></a>
+                <a href="https://instagram.com/fight_zone_dme?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
+            <div class="container">
+                <div class="nav-menu">
+                    <nav class="mainmenu mobile-menu">
+                        <ul>
+                            <li class="active"><a href="/">Главная</a></li>
+                            <li><a href="#о-нас">О нас</a></li>
+                            <li><a href="#цены">Цены</a></li>
+                            <li><a href="#расписание">Расписание</a></li>
+<!--                            <li><a href="./blog.html">Отызывы</a>-->
+<!--                                <ul class="dropdown">-->
+<!--                                    <li><a href="./about-us.html">Написать отзыв</a></li>-->
+<!--                                    <li><a href="./blog-single.html">Читать отзывы</a></li>-->
+<!--                                </ul>-->
+<!--                            </li>-->
+                            <li><a href="#контакты">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero-section">
+        <div class="hero-items owl-carousel">
+            <div class="single-hero-item set-bg" data-setbg='{% static "img/hero-slider/hero-1.jpg" %}'>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="hero-text">
+                                <h2>Современный клуб единоборств</h2>
+                                <a href="#контакты" class="primary-btn">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-hero-item set-bg" data-setbg='{% static "img/hero-slider/hero-2.jpg" %}'>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="hero-text">
+                                <h2>Индивидуальные и групповые тренировки по боксу</h2>
+                                <a href="#контакты" class="primary-btn">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-hero-item set-bg" data-setbg='{% static "img/hero-slider/hero-3.jpg" %}'>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="hero-text">
+                                <h2>Присоединяйся сейчас</h2>
+                                <a href="#контакты" class="primary-btn">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero End -->
+
+    <!-- Feature Section Begin -->
+    <section class="feature-section" id='о-нас'>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-item set-bg" data-setbg='{% static "img/feature/feature_1.jpg" %}'>
+                        <h3>для мужчин</h3><br>
+                        <a href="https://wa.me/79261397222" target="_blank" class="primary-btn f-btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-item set-bg" data-setbg='{% static "img/feature/feature_2.jpg" %}'>
+                        <h3>для женщин</h3><br>
+                        <a href="https://wa.me/79261397222" target="_blank" class="primary-btn f-btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-item set-bg" data-setbg='{% static "img/feature/feature_3.jpg" %}'>
+                        <h3>для детей и подростков</h3><br>
+                        <a href="https://wa.me/79261397222" target="_blank" class="primary-btn f-btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature Section End -->
+
+    
+    <!-- About Section Begin -->
+    <section class="home-about spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-text">
+                        <h2>Добро пожаловать в клуб</h2>
+                        <h2>FIGHT ZONE</h2>
+                        <p class="long-details">
+                            Современный спортивный клуб единоборств в г. Домодедово.
+                            Опытные тренеры. Групповые и индивидуальные тренировки. Удобное расположение, парковка. Мужская и женская раздевалки, душевые.
+                            Если ты хочешь развить в себе настоящие бойцовские качества и быть уверенным в своих силах - ждем тебя!
+                        </p>
+                        <a href="#контакты" class="primary-btn about-btn">Записаться</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <img src='{% static "img/home_about.jpg" alt="" %}'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+    
+    <section class="home-about spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-text">
+                        <h2>Александр</h2>
+                        <p class="short-details">Тренер по боксу</p>
+                        <p class="long-details">Мастер спорта (2007), финалист ЦФО по боксу, чемпион Московской области, чемпион международного турнира класса "А". Тренерский опыт 12 лет.</p>
+                        <div class="social-links">
+                            <a href="https://wa.me/79261397222" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                            <a href="https://t.me/FightZoneDME_bot" target="_blank"><i class="fa fa-telegram"></i></a>
+                            <a href="https://instagram.com/fight_zone_dme?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <img src='{% static "img/trainer/trainer_1.jpg" alt="" %}'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-about spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-text">
+                        <h2>Олег</h2>
+                        <p class="short-details">Тренер по боксу</p>
+                        <p class="long-details">Бронзовый призер мастерского турнира класса "А", чемпион Москвы, чемпион Всероссийского турнира по боксу класса "Б", финалист международного турнира по боксу класса "А".</p>
+                        <div class="social-links">
+                            <a href="https://wa.me/79261397222" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                            <a href="https://t.me/FightZoneDME_bot" target="_blank"><i class="fa fa-telegram"></i></a>
+                            <a href="https://instagram.com/fight_zone_dme?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <img src='{% static "img/trainer/trainer_2.jpg" alt="" %}'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="classtime-section class-time-table spad" id="цены">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <h2>Цены</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="timetable-controls">
+                        <ul>
+                            <li class="active" data-tsfilter="all">Возраст 4+</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="classtime-table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                                <span>Разовое посещение</span>
+                                <h6>500₽</h6>
+                            </td>
+                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                                <span>4 занятия</span>
+                                <h6>1800₽</h6>
+                            </td>
+                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                                <span>6 занятий</span>
+                                <h6>2400₽</h6>
+                            </td>
+                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                                <span>8 занятий</span>
+                                <h6>3000₽</h6>
+                            </td>
+                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                                <span>12 занятий</span>
+                                <h6>4000₽</h6>
+                            </td>
+                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                                <span>Пробное занятие</span>
+                                <h6>БЕСПЛАТНО</h6>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Class Time Section Begin -->
+    <section class="classtime-section class-time-table spad" id="расписание">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <h2>Расписание</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="timetable-controls">
+                        <ul>
+                            <li class="active" data-tsfilter="all">Все</li>
+                            <li data-tsfilter="crossfit">Бокс</li>
+                            <li data-tsfilter="lunge">Бокс (дети)</li>
+                            <!--<li data-tsfilter="ppsr">Тайский бокс</li>-->
+                            <!--<li data-tsfilter="walls">Каратэ</li>-->
+                            <!--<li data-tsfilter="candy">Кроссфит</li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="classtime-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Понедельник</th>
+                            <th>Вторник</th>
+                            <th>Среда</th>
+                            <th>Четверг</th>
+                            <th>Пятница</th>
+                            <th>Суббота</th>
+                            <th>Воскресенье</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="workout-time">Бокс</td>
+                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                                <span>09:00-10:30</span>
+                                <span>19:30-21:00</span>
+                                <span>21:00-22:30</span>
+                            </td>
+                            <td></td>
+                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                                <span>09:00-10:30</span>
+                                <span>19:30-21:00</span>
+                                <span>21:00-22:30</span>
+                            </td>
+                            <td></td>
+                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                                <span>09:00-10:30</span>
+                                <span>19:30-21:00</span>
+                                <span>21:00-22:30</span>
+                            </td>
+                            <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                                <span>10:00-11:30</span>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="workout-time">Бокс <h6>дети</h6></td>
+                            <td class="hover-bg ts-item" data-tsmeta="lunge">
+                                <span><h6>4+</h6>16:00-17:00</span>
+                                <span><h6>6+</h6>17:00-18:00</span>
+                                <span><h6>10+</h6>18:00-19:30</span>
+                            </td>
+                            <td>
+                            </td>
+                            <td class="hover-bg ts-item" data-tsmeta="lunge">
+                                <span><h6>4+</h6>16:00-17:00</span>
+                                <span><h6>6+</h6>17:00-18:00</span>
+                                <span><h6>10+</h6>18:00-19:30</span>
+                            </td>
+                            <td>
+                            </td>
+                            <td class="hover-bg ts-item" data-tsmeta="lunge">
+                                <span><h6>4+</h6>16:00-17:00</span>
+                                <span><h6>6+</h6>17:00-18:00</span>
+                                <span><h6>10+</h6>18:00-19:30</span>
+                            </td>
+                            <td class="hover-bg ts-item" data-tsmeta="lunge">
+                                <span>10:00-11:30</span>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <!--<tr>-->
+                        <!--    <td class="workout-time">Тайский бокс</td>-->
+                        <!--    <td></td>-->
+                        <!--    <td class="hover-bg ts-item" data-tsmeta="ppsr">-->
+                        <!--        <h6>Дети 7+</h6>-->
+                        <!--        <span>17:00-18:30</span>-->
+                        <!--        <h6>Взрослые</h6>-->
+                        <!--        <span>20:30-22:00</span>-->
+                        <!--    </td>-->
+                        <!--    <td></td>-->
+                        <!--    <td class="hover-bg ts-item" data-tsmeta="ppsr">-->
+                        <!--        <h6>Дети 7+</h6>-->
+                        <!--        <span>17:00-18:30</span>-->
+                        <!--        <h6>Взрослые</h6>-->
+                        <!--        <span>20:30-22:00</span>-->
+                        <!--    </td>-->
+                        <!--    <td>-->
+                        <!--    </td>-->
+                        <!--    <td class="hover-bg ts-item" data-tsmeta="ppsr">-->
+                        <!--        <h6>Дети 7+</h6>-->
+                        <!--        <span>13:30-15:00</span>-->
+                        <!--        <h6>Взрослые</h6>-->
+                        <!--        <span>15:00-16:30</span>-->
+                        <!--    </td>-->
+                        <!--    <td>-->
+                        <!--    </td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--    <td class="workout-time">Каратэ</td>-->
+                        <!--    <td></td>-->
+                        <!--    <td class="hover-bg ts-item" data-tsmeta="walls">-->
+                        <!--        <span>18:15-19:30</span>-->
+                        <!--    </td>-->
+                        <!--    <td></td>-->
+                        <!--    <td class="hover-bg ts-item" data-tsmeta="walls">-->
+                        <!--        <span>18:15-19:30</span>-->
+                        <!--    </td>-->
+                        <!--    <td></td>-->
+                        <!--    <td class="hover-bg ts-item" data-tsmeta="walls">-->
+                        <!--        <span>18:15-19:30</span>-->
+                        <!--    </td>-->
+                        <!--    <td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--    <td class="workout-time">Кроссфит</td>-->
+                        <!--    <td></td>-->
+                        <!--    <td class="hover-bg ts-item" data-tsmeta="candy">-->
+                        <!--        <span>19:30-20:30</span>-->
+                        <!--    </td>-->
+                        <!--    <td></td>-->
+                        <!--    <td class="hover-bg ts-item" data-tsmeta="candy">-->
+                        <!--        <span>19:30-20:30</span>-->
+                        <!--    </td>-->
+                        <!--    <td></td>-->
+                        <!--    <td class="hover-bg ts-item" data-tsmeta="candy">-->
+                        <!--        <span>17:00-18:00</span>-->
+                        <!--    </td>-->
+                        <!--    <td></td>-->
+                        <!--</tr>-->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- Class Time Section End -->
+
+    <!-- Cta Section Begin -->
+    <section class="cta-section" id="контакты">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="cta-text">
+                        <h3>Контакты</h3>
+                    </div>
+                    <a href="tel:+79261397222" class="primary-btn cta-btn"><i class="fa fa-phone"></i>+79261397222</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cta Section End -->
+
+    <!-- Map Section Begin -->
+    <div class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aea811fda4c89383127cc8c7108f6e84eacb332889d314de906312a38244fc0cf&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+        <div class="map-contact-detalis">
+            <div class="map-contact-form">
+                <h5>Записаться</h5>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.name }}
+                    <p>{{ form.phone }}</p>
+                    {{ form.txt }}
+                    <button type="submit" class="site-btn">Отправить</button>
+                    <span>{{ error }}</span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Map Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-logo-item">
+                        <div class="f-logo">
+                            <a href="/admin" target="_blank"><img src='{% static "img/logo.png" alt="" %}'></a>
+                        </div>
+                        <div class="social-links">
+                            <h6>Мы в социальных сетях</h6>
+                            <a href="https://wa.me/79261397222" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                            <a href="https://t.me/FightZoneDME_bot" target="_blank"><i class="fa fa-telegram"></i></a>
+                            <a href="https://instagram.com/fight_zone_dme?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-widget">
+                        <h5>Контакты</h5>
+                        <ul class="footer-info">
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <span>Телефон:</span>
+                                <a href="tel:+79261397222"><p>+7 (926) 139-72-22</p></a>
+                            </li>
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                                <span>Адрес</span>
+                                г. Домодедово, Каширское шоссе, д.1
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="ct-inside"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made by <a href="https://wa.me/79652634170" target="_blank">stlthwl</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src='{% static "js/jquery-3.3.1.min.js" %}'></script>
+    <script src='{% static "js/bootstrap.min.js" %}'></script>
+    <script src='{% static "js/jquery.magnific-popup.min.js" %}'></script>
+    <script src='{% static "js/mixitup.min.js" %}'></script>
+    <script src='{% static "js/jquery.nice-select.min.js" %}'></script>
+    <script src='{% static "js/jquery.slicknav.js" %}'></script>
+    <script src='{% static "js/owl.carousel.min.js" %}'></script>
+    <script src='{% static "js/masonry.pkgd.min.js" %}'></script>
+    <script src='{% static "js/main.js" %}'></script>
+</body>
+
+</html>
